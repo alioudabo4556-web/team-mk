@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team MK – Organisation d’événements et location de matériel à Bamako</title>
+<meta name="description" content="Team MK : organisation d’événements, animation et location de matériel événementiel à Bamako.">
+<link rel="icon" href="logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#accueil"><img src="logo.jpeg" alt="Logo Team MK" width="40" height="40"><span>Team MK</span></a>
+<nav aria-label="Navigation principale"><a href="#services">Services</a><a href="#materiel">Matériel</a><a href="#apropos">À propos</a><a href="#localisation">Localisation</a><a href="#contact">Contact</a></nav>
+<a class="btn sm" href="#materiel">Réserver</a>
+</div></header>
+
+<main id="accueil">
+<div class="hero"><div class="wrap">
+<h1>Votre événement, notre organisation.</h1>
+<p>Team MK organise vos événements et loue le matériel qu’il vous faut à Bamako : chaises, tables, tribunes, scène, lumière, tapis et plus.</p>
+<div class="cta"><a class="btn" href="#materiel">Réserver du matériel</a><a class="btn ghost" href="#contact">Nous contacter</a></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>Nos services</h2>
+<p class="lead">De l’idée jusqu’au dernier invité, nous prenons tout en charge.</p>
+<div class="services">
+<div class="svc"><h3>Organisation d’événements</h3><p>Mariages, anniversaires, baptêmes, cérémonies et soirées.</p></div>
+<div class="svc"><h3>Événements scolaires</h3><p>Festivals, journées culturelles, remises de prix et compétitions.</p></div>
+<div class="svc"><h3>Location de matériel</h3><p>Chaises, tables, tribunes, scène, lumière, livrés sur place.</p></div>
+<div class="svc"><h3>Animation et MC</h3><p>Présentation, jeux, musique et gestion du rythme.</p></div>
+<div class="svc"><h3>Événements d’entreprise</h3><p>Lancements, conférences, séminaires et cérémonies.</p></div>
+<div class="svc"><h3>Communication</h3><p>Affiches, réseaux sociaux, photos et vidéos.</p></div>
+</div>
+</div></section>
+
+<section id="materiel" class="alt"><div class="wrap">
+<h2>Réserver du matériel</h2>
+<p class="lead">1. Choisissez vos articles sur les photos. 2. Remplissez vos informations. 3. Vous recevez votre reçu PDF, puis la Team MK vous confirme par message après votre dépôt.</p>
+<div class="shop">
+<div id="catalogue" aria-live="polite"></div>
+<aside class="cart">
+<h3>Votre réservation</h3>
+<ul id="lignes"><li class="vide">Aucun article pour l’instant.</li></ul>
+<div id="calc" class="calc"></div>
+<form id="cmd">
+<label>Nom<input name="nom" required autocomplete="family-name"></label>
+<label>Prénom<input name="prenom" required autocomplete="given-name"></label>
+<label>Numéro de téléphone<input name="tel" type="tel" required autocomplete="tel"></label>
+<label>Quartier<input name="quartier" required placeholder="Ex : Sebenicoro"></label>
+<label>Précision du lieu<input name="lieu" required placeholder="Ex : près du neuvième arrondissement"></label>
+<label>Début de la location<input name="d1" type="date" required><input name="h1" type="time" required aria-label="Heure de début"></label>
+<label>Fin de la location<input name="d2" type="date" required><input name="h2" type="time" required aria-label="Heure de fin"></label>
+<fieldset class="pay"><legend>Mode de paiement</legend><div id="paiement"></div></fieldset>
+<p id="payinfo" class="hint"></p>
+<label>Autre matériel ou remarques<textarea name="note"></textarea></label>
+<button class="btn" type="submit">Valider ma réservation</button>
+<p id="err" class="err" role="alert"></p>
+</form>
+<div id="done" class="done" role="status"></div>
+</aside>
+</div>
+</div></section>
+
+<section id="apropos"><div class="wrap about">
+<div>
+<h2>Qui sommes-nous ?</h2>
+<p class="lead">Team MK est une structure événementielle basée à Bamako. Notre équipe met l’organisation, la rigueur et l’énergie au service de vos événements, petits ou grands.</p>
+</div>
+<div class="facts">
+<div class="fact"><b>Organisation rigoureuse</b><span>Planning, budget, logistique et suivi.</span></div>
+<div class="fact"><b>Matériel fiable</b><span>Livré à l’heure, installé et récupéré.</span></div>
+<div class="fact"><b>Esprit d’équipe</b><span>Chacun a un rôle clair, chaque détail est suivi.</span></div>
+</div>
+</div></section>
+
+<section id="localisation" class="alt"><div class="wrap">
+<h2>Où nous trouver</h2>
+<p class="lead" id="adresse"></p>
+<div class="map"><iframe id="carte" title="Carte de localisation Team MK" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div>
+<h2>Contactez-nous</h2>
+<p class="lead">Informations, réservations d’événements ou commande de matériel : appelez-nous ou écrivez-nous sur WhatsApp.</p>
+<ul>
+<li><b>Téléphone / WhatsApp</b><br><a id="t1" href="#"></a></li>
+<li><b>Deuxième numéro</b><br><a id="t2" href="#"></a></li>
+</ul>
+</div>
+<div class="fact big"><b>Réservations d’événements</b><span>Mariages, baptêmes, fêtes, cérémonies scolaires ou d’entreprise : contactez-nous pour un devis.</span><br><a class="btn" id="lienWa" href="#" style="margin-top:14px">Écrire sur WhatsApp</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Team MK</span><span>Bamako, Mali</span></div></footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Écrire à la Team MK sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Discuter sur WhatsApp</span></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
